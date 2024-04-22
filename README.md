@@ -1,5 +1,10 @@
 # LydiaTechnicalTest
 
+## Getting Started
+The application is in **Kotlin 1.9**.  
+The views are mainly designed with **Jetpack Compose**.
+The architecture of the application is **MVI** (Model - View - Intent).
+
 ## Architecture detail
 
 The main idea of this architecture is to make clear separation between UI and logic.
