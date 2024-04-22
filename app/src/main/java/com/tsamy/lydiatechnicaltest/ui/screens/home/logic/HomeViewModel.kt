@@ -22,7 +22,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    fetchBis: FetchContactsUseCaseDefault,
+    fetchContacts: FetchContactsUseCaseDefault,
     networkConnectivityService: NetworkConnectivityService
 ) : ViewModel() {
 
@@ -34,7 +34,7 @@ class HomeViewModel @Inject constructor(
         )
 
     val contactsFlow: Flow<PagingData<ContactItem.Model>> =
-        fetchBis()
+        fetchContacts()
             .map {
                 it.map { contact ->
                     ContactItem.Model(

@@ -1,8 +1,8 @@
 package com.tsamy.lydiatechnicaltest.domain.usecase
 
-import com.tsamy.lydiatechnicaltest.domain.repository.ContactRepository
 import com.tsamy.lydiatechnicaltest.domain.entity.Address
 import com.tsamy.lydiatechnicaltest.domain.entity.Contact
+import com.tsamy.lydiatechnicaltest.domain.repository.ContactRepository
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.coVerify
