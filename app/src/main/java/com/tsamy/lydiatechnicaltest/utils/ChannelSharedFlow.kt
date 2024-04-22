@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
  * A SharedFlow backed by a channel that hold onto elements until there's at least 1 subscriber
  * to consume them.
  */
-interface ChannelSharedFlow<T>: SharedFlow<T>, FlowCollector<T>
+interface ChannelSharedFlow<T> : SharedFlow<T>, FlowCollector<T>
 
 fun <T> ChannelSharedFlow(
     scope: CoroutineScope,
@@ -39,7 +39,7 @@ private class ChannelSharedFlowImpl<T>(
     bufferCapacity: Int = Channel.BUFFERED,
     onBufferOverflow: BufferOverflow = BufferOverflow.SUSPEND,
     onUndeliveredElement: ((T) -> Unit)? = null,
-):  ChannelSharedFlow<T> {
+) : ChannelSharedFlow<T> {
 
     private val channel = Channel(
         capacity = bufferCapacity,

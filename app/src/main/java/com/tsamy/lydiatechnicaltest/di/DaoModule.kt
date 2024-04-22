@@ -1,8 +1,8 @@
 package com.tsamy.lydiatechnicaltest.di
 
+import com.tsamy.lydiatechnicaltest.data.local.AppDatabase
 import com.tsamy.lydiatechnicaltest.data.local.dao.ContactDao
 import com.tsamy.lydiatechnicaltest.data.local.dao.RemoteKeyDao
-import com.tsamy.lydiatechnicaltest.data.local.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
