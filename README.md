@@ -37,7 +37,7 @@ pagination from scratch, without utilizing specialized libraries.
 However, I found that Paging3 offers significant advantages over manual pagination implementation,
 particularly in its ability to mediate between remote and local data sources seamlessly.
 
-### Okhttp/Retrofit
+### Retrofit / Okhttp
 
 I preferred to use Retrofit/OkHttp rather than Ktor for network calls in this project.
 Ktor is a powerful and modern library for network calls on the Kotlin platform, but I chose
@@ -74,32 +74,38 @@ satisfied with it.
   loading of large datasets.
 - AndroidX Room Paging: A Room extension that makes it easy to integrate pagination with data stored
   in a Room database.
+- MockK: A mocking library for unit tests in Kotlin, allowing easy creation of mock objects for test
+  dependencies.
+- Kotlinx Coroutines Test: A testing library for Kotlin coroutines, enabling efficient testing of
+  asynchronous code using Kotlin coroutines.
 
-| Library                                  | Version    |
-|------------------------------------------|------------|
-| androidx.core:core-ktx                   | 1.13.0     |
-| androidx.paging:paging-runtime-ktx       | 3.2.1      |
-| androidx.room:room-compiler              | 2.6.1      |
-| androidx.room:room-runtime               | 2.6.1      |
-| androidx.room:room-paging                | 2.6.1      |
-| androidx.paging:paging-compose           | 3.2.1      |
-| com.google.dagger:hilt-android           | 2.49       |
-| com.google.dagger:hilt-android-compiler  | 2.49       |
-| androidx.hilt:hilt-navigation-compose    | 1.2.0      |
-| junit:junit                              | 4.13.2     |
-| androidx.test.ext:junit                  | 1.1.5      |
-| androidx.test.espresso:espresso-core     | 3.5.1      |
-| androidx.lifecycle:lifecycle-runtime-ktx | 2.7.0      |
-| androidx.activity:activity-compose       | 1.9.0      |
-| androidx.compose:compose-bom             | 2024.04.01 |
-| com.squareup.moshi:moshi-kotlin          | 1.14.0     |
-| com.squareup.okhttp3:logging-interceptor | 4.10.0     |
-| com.squareup.retrofit2:retrofit          | 2.9.0      |
-| com.squareup.retrofit2:converter-moshi   | 2.9.0      |
-| androidx.fragment:fragment-ktx           | 1.6.2      |
-| androidx.core:core-splashscreen          | 1.0.1      |
-| androidx.navigation:navigation-compose   | 2.7.7      |
-| androidx.room:room-common                | 2.6.1      |
-| androidx.room:room-ktx                   | 2.6.1      |
-| io.coil-kt:coil                          | 2.4.0      |
-| io.coil-kt:coil-compose-base             | 2.4.0      |
+| Library                                       | Version    |
+|-----------------------------------------------|------------|
+| androidx.core:core-ktx                        | 1.13.0     |
+| androidx.paging:paging-runtime-ktx            | 3.2.1      |
+| androidx.room:room-compiler                   | 2.6.1      |
+| androidx.room:room-runtime                    | 2.6.1      |
+| androidx.room:room-paging                     | 2.6.1      |
+| androidx.paging:paging-compose                | 3.2.1      |
+| com.google.dagger:hilt-android                | 2.49       |
+| com.google.dagger:hilt-android-compiler       | 2.49       |
+| androidx.hilt:hilt-navigation-compose         | 1.2.0      |
+| junit:junit                                   | 4.13.2     |
+| androidx.test.ext:junit                       | 1.1.5      |
+| androidx.test.espresso:espresso-core          | 3.5.1      |
+| androidx.lifecycle:lifecycle-runtime-ktx      | 2.7.0      |
+| androidx.activity:activity-compose            | 1.9.0      |
+| androidx.compose:compose-bom                  | 2024.04.01 |
+| com.squareup.moshi:moshi-kotlin               | 1.14.0     |
+| com.squareup.okhttp3:logging-interceptor      | 4.10.0     |
+| com.squareup.retrofit2:retrofit               | 2.9.0      |
+| com.squareup.retrofit2:converter-moshi        | 2.9.0      |
+| androidx.fragment:fragment-ktx                | 1.6.2      |
+| androidx.core:core-splashscreen               | 1.0.1      |
+| androidx.navigation:navigation-compose        | 2.7.7      |
+| androidx.room:room-common                     | 2.6.1      |
+| androidx.room:room-ktx                        | 2.6.1      |
+| io.coil-kt:coil                               | 2.4.0      |
+| io.coil-kt:coil-compose-base                  | 2.4.0      |
+| io.mockk:mockk                                | 1.13.5     |
+| org.jetbrains.kotlinx:kotlinx-coroutines-test | 1.7.1      |

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LydiaTechnicalTest</string>
+
+    <string name="splash_name_label">"Technical Test"</string>
+    <string name="send_email_title">"Send an email…"</string>
+    <string name="splash_author_label">"Thomas SAMY"</string>
+    <string name="list_contacts_title">Contacts</string>
+    <string name="contact_details_title">Contact details</string>
+    <string name="back_button_label">BACK</string>
+    <string name="contact_image">contact image</string>
+    <string name="lydia_logo">lydia logo</string>
+    <string name="phone_icon">phone icon</string>
+    <string name="dob_label">date of birth</string>
+    <string name="email_label">Email</string>
+    <string name="phone_label">Phone</string>
+    <string name="cell_label">Cell</string>
+    <string name="address_label">Address</string>
+    <string name="no_connection_label">No internet connection</string>
+</resources>
