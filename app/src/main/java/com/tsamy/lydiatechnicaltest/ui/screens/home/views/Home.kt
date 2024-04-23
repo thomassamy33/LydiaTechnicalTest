@@ -55,7 +55,7 @@ fun Home(
         if (networkStatus != NetworkStatus.Connected) {
             InfoBar(modifier = Modifier, stringId = R.string.no_connection_label)
         }
-        if (contacts.loadState.append is LoadState.Error) {
+        if (contacts.loadState.append is LoadState.Error || contacts.loadState.refresh is LoadState.Error) {
             InfoBar(modifier = Modifier, stringId = R.string.append_data_failed_label)
         }
         Box(modifier = Modifier.fillMaxSize()) {
@@ -88,7 +88,7 @@ fun Home(
                     }
                 )
             }
-            if (contacts.loadState.append is LoadState.Error) {
+            if (contacts.loadState.append is LoadState.Error || contacts.loadState.refresh is LoadState.Error) {
                 RoundButton(
                     modifier = Modifier
                         .align(Alignment.BottomStart),
