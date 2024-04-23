@@ -78,8 +78,8 @@ fun Home(
             if (lazyListState.canScrollBackward) {
                 RoundButton(
                     modifier = Modifier
-                        .align(Alignment.BottomEnd)
-                        .background(Palette.Gray),
+                        .align(Alignment.BottomEnd),
+                    color = Palette.Gray,
                     stringId = R.string.top_label,
                     onClick = {
                         coroutineScope.launch {
@@ -91,8 +91,8 @@ fun Home(
             if (contacts.loadState.append is LoadState.Error) {
                 RoundButton(
                     modifier = Modifier
-                        .align(Alignment.BottomStart)
-                        .background(Palette.Error),
+                        .align(Alignment.BottomStart),
+                    color = Palette.Error,
                     stringId = R.string.retry_label,
                     onClick = {
                         coroutineScope.launch {

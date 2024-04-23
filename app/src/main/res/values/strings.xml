@@ -16,7 +16,7 @@
     <string name="cell_label">Cell</string>
     <string name="address_label">Address</string>
     <string name="no_connection_label">No internet connection</string>
-    <string name="append_data_failed_label">Data failed, selected "RETRY"</string>
+    <string name="append_data_failed_label">Data download failed, selected "RETRY"</string>
     <string name="retry_label">RETRY</string>
     <string name="top_label">TOP</string>
 </resources>
